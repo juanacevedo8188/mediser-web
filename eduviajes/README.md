@@ -21,7 +21,10 @@ Framework Preset **Other** y Build Command vacío. Así queda separado del sitio
 - Hero animado: avión que sale del Monumento a la Bandera, parallax, cartel split-flap y sello giratorio.
   En modo oscuro el cielo pasa a noche con estrellas.
 - Tablero de salidas tipo aeropuerto (fechas de ejemplo) que abre la ficha del viaje.
-- Catálogo de 13 destinos en formato polaroid con ilustraciones animadas, filtros por región y perfil, y mapa con rutas desde Rosario.
+- Simulador de viaje: en vez de listar todo el catálogo, un globo terráqueo (Natural Earth 110m, dominio público,
+  simplificado e incrustado) gira desde Rosario, hace zoom según la distancia y vuela al destino elegido entre
+  8 destacados; al llegar aparece la polaroid del destino. Recorre los destinos solo hasta que el usuario elige uno.
+  Europa hace Rosario → Madrid → París → Roma. Las fichas del Caribe y Europa también muestran el globo.
 - Sección colegios: niveles en pestañas de carpeta, qué incluye en una hoja de cuaderno, recorrido paso a paso con un micro que avanza al scrollear y formulario a WhatsApp.
 - Simulador de cuotas (fija o indexada) con valor en pesos de hoy, gráfico y tabla.
 - Cotizador que arma una tarjeta de embarque en vivo y envía la consulta por WhatsApp o email (sin pagos online).
@@ -33,5 +36,5 @@ Framework Preset **Other** y Build Command vacío. Así queda separado del sitio
 
 - Confirmar el WhatsApp (constante `WA`) y los horarios (`HRS`); se tomaron de directorios públicos o son supuestos.
 - Dirección de Maciel, razón social y habilitación de turismo estudiantil (Ley 25.599).
-- Reemplazar destinos, itinerarios, salidas (`DESTS`, `DEPS`) y reseñas de ejemplo por los reales.
+- Elegir los destinos destacados (`PICKS`) y reemplazar destinos, itinerarios, salidas (`DESTS`, `DEPS`) y reseñas de ejemplo por los reales.
 - Ajustar el verde al código exacto de la marca, sumar logo y fotos reales; quitar el banner y el selector de paleta y sacar `noindex` del `<head>`.

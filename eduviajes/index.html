@@ -21,7 +21,7 @@
   --stars:0;--on-accent:#1f1300;--on-brand:#fff;
   --bg:#fff;--surface:#fff;--surface-2:color-mix(in srgb,var(--brand) 5%,#fff);--ink:#11261b;--muted:#4f6457;--line:color-mix(in srgb,var(--brand) 15%,#fff);
   --accent:var(--brand-2);--accent-soft:var(--brand-soft);--gold:color-mix(in srgb,var(--brand) 35%,#fff);--paper:#fff;
-  --hero-ink:var(--deep);--flap-a:#123324;--flap-b:#0d281c;--flap-ink:#fff}
+  --hero-ink:var(--deep);--g-ink:var(--deep);--flap-a:#123324;--flap-b:#0d281c;--flap-ink:#fff}
 /* Tonos de verde (sólo para la propuesta): bosque (por defecto), esmeralda, oliva */
 :root,:root[data-palette="bosque"]{--ill:#0f5d3b;--brand:#0f5d3b;--brand-2:#1c7c50;--brand-soft:#e2f0e6;--brand-dk:#7fd3a3;--brand-dk2:#a6e4c0;--deep:#0a3a25;--deep-rgb:10,58,37}
 :root[data-palette="esmeralda"]{--ill:#00845a;--brand:#00845a;--brand-2:#0d9a69;--brand-soft:#dcf3e8;--brand-dk:#5fe0ad;--brand-dk2:#93ecc8;--deep:#024d35;--deep-rgb:2,77,53}
@@ -29,9 +29,9 @@
 :root{--sky-a:color-mix(in srgb,var(--brand) 7%,#fff);--sky-b:color-mix(in srgb,var(--brand) 13%,#fff);--sky-c:#fff;--sky-d:color-mix(in srgb,var(--brand) 9%,#fff);--sun:#fff;--mtn1:color-mix(in srgb,var(--brand) 32%,#fff);--mtn2:color-mix(in srgb,var(--brand) 68%,#fff);--mtn3:var(--deep);--scrim:linear-gradient(90deg,rgba(255,255,255,.9),rgba(255,255,255,.55) 42%,transparent 66%);--scrim-v:linear-gradient(180deg,rgba(255,255,255,.85),rgba(255,255,255,.45) 60%,transparent)}
 @media (prefers-color-scheme:dark){
   .chart .real,.chart .rdot{stroke:#fff}.chart .rdot{fill:#fff}
-  :root:not([data-theme="light"]){--bg:#0b120e;--surface:#121c16;--surface-2:#18251d;--ink:#e9efe9;--muted:#9fb0a4;--line:#26352b;--brand:var(--brand-dk);--brand-2:var(--brand-dk2);--brand-soft:#1b3326;--on-brand:#06140d;--accent:var(--brand-dk2);--accent-soft:#1b3326;--paper:#fff;--ok:#4cc27d;--warn:#f0b35b;--bad:#ff8a5c;--stars:1;--hero-ink:#f2f6f0;--sky-a:#040c08;--sky-b:#0a1f15;--sky-c:#123526;--sky-d:#1d4a35;--sun:#f2f6f0;--mtn1:#173a29;--mtn2:#0f2a1d;--mtn3:#06120c;--scrim:linear-gradient(90deg,rgba(4,12,8,.7),rgba(4,12,8,.3) 48%,transparent 72%);--scrim-v:linear-gradient(180deg,rgba(4,12,8,.6),rgba(4,12,8,.25) 70%,transparent)}
+  :root:not([data-theme="light"]){--bg:#0b120e;--surface:#121c16;--surface-2:#18251d;--ink:#e9efe9;--muted:#9fb0a4;--line:#26352b;--brand:var(--brand-dk);--brand-2:var(--brand-dk2);--brand-soft:#1b3326;--on-brand:#06140d;--accent:var(--brand-dk2);--accent-soft:#1b3326;--paper:#fff;--ok:#4cc27d;--warn:#f0b35b;--bad:#ff8a5c;--stars:1;--hero-ink:#f2f6f0;--g-ink:#fff;--sky-a:#040c08;--sky-b:#0a1f15;--sky-c:#123526;--sky-d:#1d4a35;--sun:#f2f6f0;--mtn1:#173a29;--mtn2:#0f2a1d;--mtn3:#06120c;--scrim:linear-gradient(90deg,rgba(4,12,8,.7),rgba(4,12,8,.3) 48%,transparent 72%);--scrim-v:linear-gradient(180deg,rgba(4,12,8,.6),rgba(4,12,8,.25) 70%,transparent)}
 }
-:root[data-theme="dark"]{--bg:#0b120e;--surface:#121c16;--surface-2:#18251d;--ink:#e9efe9;--muted:#9fb0a4;--line:#26352b;--brand:var(--brand-dk);--brand-2:var(--brand-dk2);--brand-soft:#1b3326;--on-brand:#06140d;--accent:var(--brand-dk2);--accent-soft:#1b3326;--paper:#fff;--ok:#4cc27d;--warn:#f0b35b;--bad:#ff8a5c;--stars:1;--hero-ink:#f2f6f0;--sky-a:#040c08;--sky-b:#0a1f15;--sky-c:#123526;--sky-d:#1d4a35;--sun:#f2f6f0;--mtn1:#173a29;--mtn2:#0f2a1d;--mtn3:#06120c;--scrim:linear-gradient(90deg,rgba(4,12,8,.7),rgba(4,12,8,.3) 48%,transparent 72%);--scrim-v:linear-gradient(180deg,rgba(4,12,8,.6),rgba(4,12,8,.25) 70%,transparent)}
+:root[data-theme="dark"]{--bg:#0b120e;--surface:#121c16;--surface-2:#18251d;--ink:#e9efe9;--muted:#9fb0a4;--line:#26352b;--brand:var(--brand-dk);--brand-2:var(--brand-dk2);--brand-soft:#1b3326;--on-brand:#06140d;--accent:var(--brand-dk2);--accent-soft:#1b3326;--paper:#fff;--ok:#4cc27d;--warn:#f0b35b;--bad:#ff8a5c;--stars:1;--hero-ink:#f2f6f0;--g-ink:#fff;--sky-a:#040c08;--sky-b:#0a1f15;--sky-c:#123526;--sky-d:#1d4a35;--sun:#f2f6f0;--mtn1:#173a29;--mtn2:#0f2a1d;--mtn3:#06120c;--scrim:linear-gradient(90deg,rgba(4,12,8,.7),rgba(4,12,8,.3) 48%,transparent 72%);--scrim-v:linear-gradient(180deg,rgba(4,12,8,.6),rgba(4,12,8,.25) 70%,transparent)}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
@@ -228,6 +228,41 @@ button.drow:hover{background:rgba(255,255,255,.05)}
 .map .lbl{opacity:0;transition:opacity .3s;paint-order:stroke;stroke:var(--surface);stroke-width:4px}
 .map .lbl.on{opacity:1}
 .map .mplane{fill:var(--accent);opacity:0;transition:opacity .3s}
+.map{transition:opacity .45s}
+/* simulador de viaje */
+.trip{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.trip-stage{position:relative;position:sticky;top:96px}
+.trip-stage .globe{display:block;width:100%;max-width:560px;height:auto;margin:0 auto}
+.trip-hint{display:table;margin:10px auto 0;background:#07190f;color:#fff;font-weight:700;font-size:.86rem;letter-spacing:.02em;padding:8px 14px;border-radius:8px;text-align:center}
+.trip-hint b{color:#9fdcb7;font-weight:700}
+.picks{display:grid;gap:10px;margin:0 0 26px}
+.pgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pgroup .flabel{min-width:104px}
+.pick{border:1.5px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 13px;font-weight:600;font-size:.92rem;transition:all .2s}
+.pick:hover{border-color:var(--ink)}
+.pick[aria-checked="true"]{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.other{font:600 1.3rem/1.2 var(--hand);color:var(--brand-2);margin:0 0 22px}
+.other a{color:inherit}
+.polaroid{--r:-1.2deg;background:var(--surface);padding:10px 10px 0;border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,.1),0 18px 32px -20px rgba(0,0,0,.5);transform:rotate(var(--r));max-width:460px}
+.polaroid.wait{opacity:.35;filter:grayscale(.4);transition:opacity .3s}
+.polaroid.land{animation:land .6s cubic-bezier(.2,.9,.3,1.3) both}
+@keyframes land{from{opacity:0;transform:translateY(-26px) rotate(4deg) scale(.95)}}
+.trip-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.trip-actions .btn{padding:10px 16px;font-size:.92rem}
+.globe .g-pulse{fill:none;stroke:var(--g-ink);stroke-width:2;animation:pulse 2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.globe .g-halo{fill:none;stroke:var(--brand-soft);stroke-width:10}
+.globe .g-sea{stroke:color-mix(in srgb,var(--brand) 25%,transparent);stroke-width:1}
+.globe .g-grat{fill:none;stroke:color-mix(in srgb,var(--brand) 16%,transparent);stroke-width:.7}
+.globe .g-land{fill:var(--brand);fill-opacity:.82;stroke:var(--surface);stroke-width:.5;stroke-linejoin:round}
+.globe .g-shade{pointer-events:none}
+.globe .g-route{fill:none;stroke:var(--g-ink);stroke-opacity:.3;stroke-width:1.3;stroke-dasharray:3 4}
+.globe .g-arc{fill:none;stroke:var(--g-ink);stroke-width:2.4;stroke-linecap:round}
+.globe .g-pins circle{fill:var(--surface);stroke:var(--g-ink);stroke-width:2.2}
+.globe .g-pins circle.home{fill:var(--g-ink)}
+.globe .g-pins text{font:700 11px var(--font);fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.globe .g-plane{fill:var(--g-ink)}
+.globe-art{display:grid;place-items:center;padding:28px;background:radial-gradient(circle at 50% 45%,var(--surface),var(--surface-2) 70%)}
+.art.globe-art svg{width:min(100%,400px);height:auto}
 
 /* dialog */
 dialog{border:0;padding:0;border-radius:14px;width:min(900px,calc(100% - 24px));max-height:calc(100svh - 32px);background:var(--surface);color:var(--ink);box-shadow:0 40px 90px -30px rgba(0,0,0,.6)}
@@ -429,9 +464,10 @@ footer p{margin:0;opacity:.75}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
 
 @media (max-width:1080px){
-  .dest-layout{grid-template-columns:1fr}
-  .map-wrap{display:none}
-  .dgrid{grid-template-columns:repeat(2,1fr)}
+  .trip{grid-template-columns:1fr;gap:24px}
+  .trip-stage{position:static}
+  .trip-stage .globe{max-width:440px}
+  .polaroid{margin-inline:auto}
   .sim{grid-template-columns:1fr}
   .quote{grid-template-columns:1fr}
   .pass-wrap{position:static;order:-1}
@@ -595,22 +631,17 @@ footer p{margin:0;opacity:.75}
 <section class="wrap section" id="destinos">
   <p class="eyebrow">¿a dónde vamos?</p>
   <h2>De Rosario a <em>donde quieras</em>.</h2>
-  <p class="intro">Del Norte a Tierra del Fuego, las playas de Brasil, el Caribe y Europa. Abrí cualquier foto para ver el recorrido y consultarlo.</p>
-  <div class="filters">
-    <div class="chips" role="group" aria-label="Filtrar por región"><span class="flabel">región</span>
-      <button class="chip" data-reg="all" aria-pressed="true">Todos</button><button class="chip" data-reg="arg" aria-pressed="false">Argentina</button><button class="chip" data-reg="sud" aria-pressed="false">Sudamérica</button><button class="chip" data-reg="car" aria-pressed="false">Caribe</button><button class="chip" data-reg="eur" aria-pressed="false">Europa</button>
+  <p class="intro">Elegí un destino y mirá el viaje desde Rosario. Estos son algunos de los que más salen; armamos muchos más a medida.</p>
+  <div class="trip">
+    <div class="trip-stage">
+      <svg class="globe" id="globe" role="img" aria-label="Globo terráqueo con la ruta desde Rosario al destino elegido"></svg>
+      <p class="trip-hint" id="tripHint" aria-live="polite">Rosario</p>
     </div>
-    <div class="chips" role="group" aria-label="Filtrar por tipo de viaje"><span class="flabel">ideal para</span>
-      <button class="chip" data-per="all" aria-pressed="true">Todos</button><button class="chip" data-per="colegios" aria-pressed="false">Colegios</button><button class="chip" data-per="familias" aria-pressed="false">Familias</button><button class="chip" data-per="grupos" aria-pressed="false">Grupos</button><button class="chip" data-per="aventura" aria-pressed="false">Aventura</button>
+    <div class="trip-side">
+      <div class="picks" id="picks" role="radiogroup" aria-label="Elegí un destino"></div>
+      <p class="other">¿Otro destino? <a href="#cotizar">contanos y lo armamos</a></p>
+      <div class="polaroid" id="tripCard"></div>
     </div>
-  </div>
-  <div class="dest-layout">
-    <div class="dgrid" id="dgrid" aria-live="polite"></div>
-    <aside class="map-wrap" aria-label="Mapa de rutas desde Rosario">
-      <h3>Rutas desde Rosario</h3>
-      <p id="mapHint">Pasá por un destino para trazar la ruta.</p>
-      <svg class="map" id="map" viewBox="0 0 410 720" role="img" aria-label="Mapa de Sudamérica con rutas desde Rosario"></svg>
-    </aside>
   </div>
 </section>
 
@@ -801,7 +832,7 @@ footer p{margin:0;opacity:.75}
   <h2>De esta idea a <em>su nueva web</em>.</h2>
   <p class="intro">Una primera versión pensada para que colegios y familias encuentren rápido su viaje y terminen consultando.</p>
   <div class="proposalgrid">
-    <article><h3>Qué incluiría</h3><ul><li>Diseño adaptado a celular, tablet y PC.</li><li>Catálogo de destinos con filtros, mapa de rutas e itinerarios.</li><li>Sección para colegios con pedido de propuesta.</li><li>Simulador de cuotas para familias.</li><li>Cotizador que envía la consulta armada por WhatsApp, sin pagos online.</li><li>Horario en vivo, modo oscuro y 3 tonos de verde para elegir el de la marca.</li></ul></article>
+    <article><h3>Qué incluiría</h3><ul><li>Diseño adaptado a celular, tablet y PC.</li><li>Simulador de viaje: un globo que vuela desde Rosario al destino elegido, sin listar todo el catálogo.</li><li>Sección para colegios con pedido de propuesta.</li><li>Simulador de cuotas para familias.</li><li>Cotizador que envía la consulta armada por WhatsApp, sin pagos online.</li><li>Horario en vivo, modo oscuro y 3 tonos de verde para elegir el de la marca.</li></ul></article>
     <article><h3>Qué hace falta de Edu Viajes</h3><ul><li>Logo en alta calidad y el código exacto de su verde.</li><li>Fotos reales de viajes y grupos (con autorización).</li><li>Destinos, itinerarios y salidas vigentes.</li><li>Confirmar WhatsApp, horarios, dirección de Maciel y razón social.</li><li>Confirmar habilitación de turismo estudiantil y cómo arman los planes de pago.</li></ul></article>
     <article><h3>Próximos pasos</h3><ul><li>Revisar esta propuesta juntos.</li><li>Ajustar textos y contenido real.</li><li>Recuperar el dominio eduviajes.tur.ar y publicarlo ahí.</li><li>Dar de alta la ficha en Google Maps / Business.</li></ul></article>
   </div>
@@ -944,70 +975,111 @@ DEPS.forEach(([f,dn,n,id,st])=>{
 });
 new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){depFlaps.forEach((el,i)=>flapSet(el,el.dataset.t,i*60));o.disconnect()}})},{threshold:.3}).observe(dboard);
 
-/* ---------- Mapa ---------- */
-const NS="http://www.w3.org/2000/svg";
-const P=([lon,lat])=>[+((lon+82)*8+10).toFixed(1),+((20-lat)*9.2+10).toFixed(1)];
-const OUT=[[-77.3,8.7],[-75.5,10.4],[-71.6,12.4],[-71,11],[-68,10.5],[-64,10.6],[-61.5,10.7],[-60,8.5],[-57,6],[-54,5.8],[-51.5,4.3],[-50,1.8],[-48.5,-1.4],[-44.3,-2.5],[-40,-2.9],[-35.2,-5.8],[-34.8,-7.2],[-35.7,-9.7],[-38.5,-13],[-39,-17.8],[-40.3,-20.3],[-42,-22.9],[-43.2,-23],[-46.3,-24],[-48.5,-27.6],[-50,-29.8],[-52.1,-32],[-53.4,-33.7],[-54.9,-34.9],[-56.2,-34.9],[-57.8,-34.4],[-58.4,-34.6],[-57.3,-35.8],[-56.7,-36.4],[-57.5,-38],[-62,-39],[-62.3,-40.6],[-65,-40.8],[-64.2,-42.2],[-65,-45],[-67.5,-46],[-66,-47.8],[-68.2,-50.1],[-69,-51.6],[-68.4,-52.4],[-68.6,-54.8],[-65.3,-54.8],[-67,-55.8],[-70,-55.2],[-72.5,-53.5],[-75,-51.5],[-75.5,-48],[-74,-44],[-73.8,-41.8],[-73.5,-38.5],[-72.8,-35.5],[-71.6,-33],[-71.5,-29.9],[-70.4,-23.6],[-70.2,-18.5],[-72,-17.2],[-76.2,-13.5],[-77.1,-12],[-79,-8.1],[-81.3,-4.7],[-80.3,-2.2],[-80.9,-1],[-80,.9],[-78.8,1.8],[-77.5,4],[-77.3,7]];
-const map=$("#map"),ROS=P([-60.64,-32.95]);
-let mh=`<g class="grat">`;for(let lat=10;lat>=-50;lat-=20){const y=P([0,lat])[1];mh+=`<path d="M0 ${y}H410"/>`}for(let lon=-80;lon<=-40;lon+=20){const x=P([lon,0])[0];mh+=`<path d="M${x} 0V720"/>`}mh+=`</g>`;
-mh+=`<path class="land" d="M${OUT.map(P).join("L")}Z"/>`;
-const [mx1,my1]=P([-59.6,-51.7]),[mx2,my2]=P([-58.6,-51.8]),[hx,hy]=P([-71,19]);
-mh+=`<ellipse class="land" cx="${mx1}" cy="${my1}" rx="5" ry="3"/><ellipse class="land" cx="${mx2}" cy="${my2}" rx="5" ry="3"/><ellipse class="land" cx="${hx}" cy="${hy}" rx="16" ry="4"/><g id="arcs"></g><g id="dots"></g>`;
-mh+=`<circle class="home-ring pin-dot" cx="${ROS[0]}" cy="${ROS[1]}" r="8"/><circle class="home" cx="${ROS[0]}" cy="${ROS[1]}" r="6"/><text x="${ROS[0]+10}" y="${ROS[1]+4}" style="paint-order:stroke;stroke:var(--surface);stroke-width:4px">Rosario</text><text x="384" y="24" text-anchor="end" style="fill:var(--muted)">Europa</text><g id="lbls"></g><g class="mplane" id="mplane"><path d="M16 0c0-1.6-2-2.2-4-2.2H4L-4-12h-4l5 9.8h-8L-14-6.5h-2.5l2 6.5-2 6.5H-14l3-4.3h8l-5 9.8h4l8-9.8h8c2 0 4-.6 4-2.2z" transform="scale(.7)"/></g>`;
-map.innerHTML=mh;
-const arcsG=$("#arcs"),dotsG=$("#dots"),lblG=$("#lbls"),mplane=$("#mplane"),MAPEL={};
-DESTS.forEach(d=>{
-  const [x,y]=d.ll?P(d.ll):[394,20];
-  const dx=x-ROS[0],dy=y-ROS[1],len=Math.hypot(dx,dy),s=dx>0?-1:1;
-  const cx=(ROS[0]+x)/2+s*dy/len*len*.22,cy=(ROS[1]+y)/2-s*dx/len*len*.22;
-  const arc=document.createElementNS(NS,"path");arc.setAttribute("class","arc");arc.setAttribute("d",`M${ROS[0]} ${ROS[1]}Q${cx.toFixed(1)} ${cy.toFixed(1)} ${x} ${y}`);arcsG.append(arc);
-  const dot=document.createElementNS(NS,"circle");dot.setAttribute("class","dot");dot.setAttribute("cx",x);dot.setAttribute("cy",y);dot.setAttribute("r",5);dotsG.append(dot);
-  const t=document.createElementNS(NS,"text");t.setAttribute("class","lbl");if(!d.ll)t.setAttribute("visibility","hidden");const left=x>330;t.setAttribute("x",left?x-10:x+10);t.setAttribute("y",y+4);if(left)t.setAttribute("text-anchor","end");t.textContent=d.n;lblG.append(t);
-  MAPEL[d.id]={arc,dot,t};
-});
-let mapRaf=0,mapOn=null;
-function mapFocus(id){
-  if(mapOn===id)return;mapOn=id;cancelAnimationFrame(mapRaf);
-  Object.entries(MAPEL).forEach(([k,{arc,dot,t}])=>{const on=k===id;arc.classList.toggle("on",on);dot.classList.toggle("on",on);t.classList.toggle("on",on)});
-  if(!id){mplane.style.opacity=0;$("#mapHint").textContent="Pasá por un destino para trazar la ruta.";return}
-  const {arc}=MAPEL[id],L=arc.getTotalLength();arc.style.setProperty("--len",L);arc.classList.remove("on");void arc.getBoundingClientRect();arc.classList.add("on");
-  const d=byId[id];$("#mapHint").textContent=`Rosario → ${d.n} · ${d.via.toLowerCase()} · ${d.nights} noches`;
-  if(RM){placeOn(arc,mplane,L,L);mplane.style.opacity=1;return}
-  mplane.style.opacity=1;const t0=performance.now();
-  const f=now=>{const p=Math.min(1,(now-t0)/900);placeOn(arc,mplane,ease(p)*L,L);if(p<1)mapRaf=requestAnimationFrame(f)};mapRaf=requestAnimationFrame(f);
+/* ---------- Globo (Natural Earth 110m simplificado, resolución de medio grado) ---------- */
+const LAND="-136,-108,-130,-109,-131,-110,-133,-110,-134,-110,-136,-111,-138,-111,-145,-109,-149,-106,-142,-108,-141,-106,-139,-105,-137,-105,-136,-108;291,-82,293,-82,297,-82,297,-84,296,-86,295,-86,294,-87,292,-87,289,-82,289,-81,291,-82;346,-82,346,-83,348,-82,348,-83,348,-84,345,-87,346,-88,343,-88,341,-92,339,-93,333,-92,334,-90,341,-86,344,-82,346,-81,346,-82;349,-72,351,-74,351,-73,352,-74,352,-75,354,-76,357,-75,356,-78,354,-78,352,-83,350,-83,349,-83,350,-81,350,-80,348,-79,348,-78,349,-78,349,-75,345,-69,346,-69,349,-71,349,-72;-360,-33,357,-34,357,-33,359,-33,-360,-32,-360,-33;100,-27,101,-31,100,-32,100,-31,99,-31,100,-34,94,-50,91,-51,88,-50,87,-44,89,-40,88,-35,89,-32,93,-32,95,-29,96,-27,97,-28,98,-24,100,-27;287,-28,288,-29,289,-28,291,-30,293,-38,298,-41,299,-45,300,-44,301,-45,302,-47,306,-51,306,-52,306,-55,307,-56,306,-62,305,-65,303,-66,301,-71,300,-75,297,-76,293,-78,290,-77,290,-76,287,-78,281,-76,280,-75,279,-72,276,-71,277,-70,276,-69,275,-70,274,-71,276,-67,276,-66,273,-68,272,-70,270,-69,270,-68,268,-66,269,-65,263,-63,252,-64,248,-66,247,-68,240,-68,236,-70,233,-70,230,-68,230,-67,231,-67,231,-63,230,-59,227,-52,228,-53,227,-51,228,-53,227,-49,228,-44,228,-45,229,-44,233,-41,242,-39,244,-36,245,-35,246,-33,247,-35,248,-34,247,-33,248,-32,249,-33,249,-31,251,-28,252,-29,254,-28,257,-30,259,-30,259,-29,261,-25,265,-24,265,-23,264,-23,265,-22,271,-24,273,-24,274,-25,272,-27,271,-30,280,-35,282,-35,283,-30,283,-27,284,-22,285,-21,286,-22,287,-26,287,-28;217,-14,221,-14,222,-13,225,-14,226,-15,229,-16,231,-17,229,-18,227,-17,217,-16,211,-14,212,-12,215,-12,217,-13,217,-14;304,-11,300,-13,297,-11,300,-11,300,-10,300,-11,302,-11,303,-10,303,-8,305,-9,304,-11;268,-2,269,-6,271,-7,273,-5,275,-3,277,-3,289,-8,292,-10,292,-11,295,-12,296,-13,294,-13,294,-15,296,-16,297,-18,299,-18,299,-19,302,-21,301,-21,296,-20,292,-16,289,-15,287,-16,287,-18,285,-19,282,-18,280,-17,278,-16,278,-17,275,-17,276,-15,277,-15,276,-11,270,-9,267,-7,266,-8,266,-7,264,-6,268,-5,267,-4,264,-4,264,-3,262,-3,261,-2,265,-1,268,-2;250,3,249,1,247,0,240,0,240,-1,242,-3,243,-2,247,-1,247,-2,246,-2,243,-4,245,-6,245,-7,246,-9,246,-11,245,-11,244,-11,245,-9,243,-10,243,-9,243,-8,242,-7,242,-5,241,-6,241,-11,240,-11,239,-11,239,-9,239,-7,238,-7,238,-6,240,1,242,3,246,2,248,2,250,3;212,-12,209,-12,205,-8,199,0,197,4,191,10,191,11,195,10,201,4,203,4,208,0,207,-1,209,-2,210,-5,211,-5,212,-6,212,-12;236,4,238,2,236,2,235,-2,233,-3,232,-8,232,-7,230,-8,229,-7,227,-6,224,-7,223,-6,220,-6,220,-3,218,-1,218,3,219,4,221,3,222,4,223,5,226,6,233,14,234,14,235,12,238,11,238,10,237,10,237,9,236,8,235,6,236,5,236,4;253,17,253,14,252,13,252,15,251,14,251,12,251,11,248,12,248,14,248,15,247,16,244,14,245,16,247,17,248,16,249,17,250,18,251,18,251,20,252,19,253,17;162,12,161,12,160,14,159,16,160,20,162,19,164,15,163,13,162,12;243,37,244,36,244,37,245,34,245,33,243,32,243,29,245,29,248,28,248,25,246,27,245,26,244,28,241,28,242,29,241,30,241,29,240,30,240,33,241,32,241,37,243,37;-145,40,-140,39,-137,37,-137,36,-140,37,-141,36,-141,37,-143,35,-145,36,-148,36,-149,37,-145,37,-146,39,-147,39,-145,40;-159,46,-159,45,-157,45,-153,42,-151,42,-151,41,-148,41,-150,40,-156,40,-154,41,-156,41,-157,43,-164,44,-164,45,-166,45,-168,44,-170,44,-168,46,-165,46,-159,46;242,46,241,44,240,47,243,51,244,50,242,46;282,74,281,73,282,72,281,70,278,69,274,69,272,67,270,68,270,69,262,68,264,66,263,63,261,62,260,63,261,65,260,65,259,67,261,67,265,71,269,71,271,71,273,75,275,74,279,76,280,79,280,81,281,82,283,83,284,80,284,78,282,76,282,74;288,88,289,88,291,89,291,87,288,86,286,84,283,85,282,83,280,83,280,85,281,87,283,87,284,91,288,88;-247,97,-251,98,-254,100,-256,100,-257,102,-252,101,-247,97;-112,101,-114,100,-112,100,-111,100,-112,99,-107,98,-108,97,-106,97,-105,95,-106,93,-108,94,-108,95,-108,96,-111,94,-112,94,-111,95,-113,95,-119,95,-119,96,-118,97,-117,98,-115,101,-112,103,-111,103,-112,101;287,101,289,98,286,99,285,96,287,94,287,92,285,93,284,92,284,98,284,102,283,104,283,107,285,108,284,108,285,109,287,101;-14,105,-17,103,-20,104,-18,106,-19,108,-15,110,-13,110,-11,109,-12,108,-12,106,-14,105;-6,117,-8,115,-4,115,-4,114,-6,112,-4,112,-2,109,-1,109,1,106,3,105,3,104,2,104,3,103,1,102,-6,101,-7,100,-9,101,-10,100,-12,100,-9,102,-7,103,-10,103,-11,104,-8,105,-10,106,-9,107,-6,107,-6,108,-7,109,-10,110,-9,111,-10,112,-11,111,-11,113,-12,114,-12,116,-10,117,-6,117;-170,131,-170,130,-169,131,-163,129,-163,128,-160,127,-162,127,-165,127,-166,128,-171,126,-172,127,-174,127,-173,128,-172,131,-170,131;-29,133,-29,132,-27,130,-30,129,-37,127,-46,128,-44,129,-48,130,-44,130,-44,131,-49,131,-47,133,-44,133,-41,131,-38,133,-36,132,-32,133,-29,133;-360,138,-350,134,-350,133,-349,133,-349,134,-344,134,-340,132,-342,131,-345,131,-345,129,-346,129,-352,130,-352,131,-357,131,-358,131,-357,132,-360,132,-359,131,-360,130,360,130,357,129,355,129,359,126,358,125,355,125,347,123,341,121,341,120,338,121,333,120,332,120,330,119,327,120,324,116,326,115,326,112,324,112,323,111,324,110,321,109,320,106,317,106,316,104,314,102,311,111,312,114,314,115,314,116,317,116,327,122,329,125,327,125,325,123,320,121,319,124,313,123,308,120,310,118,303,118,303,119,300,119,297,118,291,119,284,118,270,109,273,109,274,108,276,108,278,109,280,108,283,106,283,104,281,102,280,97,276,93,270,87,267,86,266,86,265,87,260,84,259,82,255,80,255,78,257,77,259,74,259,71,258,70,253,69,253,71,252,73,254,74,252,75,251,76,251,75,249,76,250,77,251,79,249,80,242,78,243,79,243,80,244,81,243,82,238,79,236,78,235,77,236,76,238,76,238,75,239,74,242,76,245,75,245,74,242,73,238,70,240,69,244,63,244,62,243,61,244,60,243,56,242,56,237,49,232,46,230,45,228,44,228,45,226,44,222,43,221,41,220,41,219,42,220,43,217,43,213,41,212,40,211,38,215,33,218,31,219,27,218,23,210,17,210,18,210,20,207,21,205,24,203,25,202,25,202,27,200,27,198,18,200,18,201,15,206,11,207,10,207,6,208,3,207,2,203,6,200,11,200,13,197,17,197,16,196,17,198,23,197,24,197,26,194,34,191,31,188,32,189,35,189,36,187,39,186,40,185,41,183,46,181,46,181,44,178,44,178,43,174,43,174,41,173,40,170,39,164,34,164,33,161,32,160,30,161,26,160,24,160,21,159,21,158,19,158,18,157,18,155,16,153,18,150,25,149,29,147,32,145,43,142,42,141,42,138,44,139,45,139,46,135,48,133,51,123,50,115,51,114,54,113,54,109,53,103,56,100,60,99,60,98,61,97,60,96,60,98,55,100,53,100,52,102,50,102,52,103,52,103,49,104,48,108,48,113,53,113,50,114,48,117,47,120,45,117,41,116,40,115,38,113,37,113,36,111,35,111,34,105,33,104,31,99,29,97,28,91,27,90,25,87,25,85,30,85,34,82,39,78,43,78,45,77,47,75,49,74,51,70,56,69,56,70,59,68,55,65,60,68,52,71,48,71,46,74,44,75,37,77,36,79,32,87,25,87,24,85,23,88,21,89,21,102,24,102,21,99,14,95,8,93,6,86,1,83,-3,81,-5,78,-9,78,-13,79,-14,78,-17,81,-22,82,-29,79,-33,75,-35,70,-40,69,-41,71,-44,71,-48,65,-51,66,-52,64,-58,56,-66,52,-68,45,-68,39,-70,36,-68,36,-65,36,-63,30,-54,29,-44,24,-36,24,-32,25,-27,27,-24,27,-21,26,-18,26,-17,24,-10,18,-2,20,6,19,7,18,8,17,10,12,9,9,13,4,12,-4,9,-9,10,-15,9,-18,10,-25,15,-26,16,-26,18,-30,22,-33,24,-33,27,-35,29,-33,32,-32,36,-33,40,-34,42,-34,44,-33,45,-32,47,-30,49,-29,53,-25,56,-23,56,-19,60,-20,62,-19,65,-14,68,-12,72,-4,70,3,73,11,73,13,74,17,74,19,75,20,74,20,73,22,74,21,73,22,71,22,70,20,69,21,68,22,68,23,66,30,65,31,63,38,61,40,62,40,64,43,66,46,65,46,64,50,64,50,63,53,63,58,62,62,63,63,63,64,62,64,63,68,62,69,63,72,69,72,72,72,73,69,74,68,72,65,72,63,73,61,73,59,72,57,73,55,73,53,76,54,78,52,79,55,81,58,81,58,82,62,82,67,84,70,84,77,82,81,82,83,83,83,84,83,85,73,90,75,91,76,92,75,93,78,95,70,93,70,91,73,91,73,90,68,89,67,89,67,90,65,91,67,92,63,93,61,93,59,90,58,90,57,87,55,85,56,83,58,83,58,82,55,82,53,80,52,82,50,82,47,81,49,80,48,80,47,80,46,81,45,81,47,78,46,78,48,76,48,75,46,76,47,75,46,75,46,73,45,73,43,74,42,77,39,81,39,83,32,87,30,88,30,90,29,90,28,90,27,90,28,91,26,91,25,91,25,89,25,88,30,84,32,84,32,83,37,80,34,81,33,80,34,79,34,78,33,78,32,76,31,76,32,78,31,80,27,82,24,83,21,86,20,88,18,89,13,86,9,87,6,86,6,84,4,82,2,82,-1,79,0,77,-1,75,-3,75,-4,73,-9,73,-11,72,-12,72,-13,74,-18,74,-18,77,-19,77,-18,82,-18,85,-19,86,-16,87,-4,87,-3,88,-2,92,-6,95,-9,96,-9,97,-7,98,-3,97,-4,100,-2,99,3,100,3,102,8,103,9,106,14,107,16,107,18,108,16,111,16,113,17,114,21,115,21,114,22,113,19,111,20,109,22,109,22,108,25,109,28,108,35,110,39,109,40,110,43,110,42,114,43,115,45,116,47,114,48,114,49,117,47,117,47,118,52,119,56,119,58,120,56,121,46,120,43,121,43,123,42,125,43,126,51,130,51,131,48,132,44,131,42,130,43,129,36,125,34,123,38,120,36,118,34,117,32,112,29,112,28,111,26,111,22,118,21,119,17,117,14,116,11,117,10,124,12,125,21,129,30,136,38,140,46,140,49,142,56,142,63,141,60,140,62,139,64,140,81,136,82,135,82,134,80,133,77,132,66,133,70,132,70,129,74,128,74,129,73,130,74,130,79,129,81,130,80,131,84,133,88,132,89,134,87,135,88,136,87,137,93,136,94,135,91,135,91,134,93,133,96,134,96,135,107,138,109,138,107,136,109,136,118,138,120,137,122,138,120,139,121,140,127,139,137,136,138,137,136,139,134,139,135,140,133,142,137,144,138,146,145,146,146,144,144,143,145,142,146,141,145,138,147,137,143,133,145,132,148,134,150,136,149,137,150,138,148,138,147,139,149,141,146,143,150,144,149,146,150,146,151,145,151,143,153,142,152,144,155,145,159,145,163,143,161,145,161,147,174,148,172,149,174,150,186,152,193,152,198,153,202,153,204,155,209,155,212,155,209,154,214,154,214,153,222,153,228,152,228,151,219,148,224,148,226,148,227,147,231,148,238,147,238,146,246,146,247,147,254,147,257,146,258,145,257,144,259,142,263,142,265,144,268,143,271,143,275,143,276,143,280,143,278,145,281,146,299,144,301,143,306,142,318,142,320,141,319,139,322,139,336,139,339,137,342,138,340,139,341,140,351,140,357,139,-360,138;98,83,99,81,101,81,99,80,98,78,98,75,102,74,108,74,108,78,106,79,107,80,105,80,106,82,108,81,109,82,107,84,106,84,106,82,105,86,103,86,101,89,103,89,103,90,106,91,106,94,102,94,98,93,97,92,95,91,93,89,95,87,95,86,98,83;-360,143,360,142,358,142,357,142,-360,143;-181,139,-181,137,-178,139,-176,137,-177,136,-175,134,-171,138,-171,140,-165,139,-163,138,-162,137,-164,136,-163,135,-163,134,-167,133,-169,133,-172,133,-175,130,-177,128,-180,128,-181,127,-182,126,-184,126,-186,124,-188,122,-189,118,-186,118,-185,114,-182,115,-170,111,-165,110,-165,109,-164,107,-163,104,-160,102,-158,103,-157,105,-158,108,-160,109,-156,110,-153,113,-153,114,-155,116,-157,118,-155,120,-156,125,-155,125,-149,124,-148,125,-143,122,-139,122,-139,118,-137,118,-135,116,-132,118,-129,121,-123,114,-124,113,-119,110,-115,109,-114,108,-112,107,-111,104,-118,102,-120,100,-133,100,-134,99,-137,98,-142,94,-141,94,-137,97,-133,98,-130,98,-128,97,-130,96,-129,92,-126,91,-123,92,-121,94,-121,93,-120,92,-128,89,-131,87,-132,87,-132,89,-129,91,-134,90,-140,87,-141,86,-142,85,-141,84,-140,84,-140,83,-147,82,-144,82,-148,82,-149,81,-148,81,-148,79,-150,78,-151,79,-150,77,-152,74,-151,76,-152,77,-153,78,-153,76,-154,76,-153,76,-151,71,-153,70,-158,67,-163,63,-163,60,-160,54,-161,50,-162,50,-163,52,-166,56,-165,57,-166,58,-168,60,-170,59,-173,61,-178,61,-179,60,-178,59,-180,58,-182,58,-183,59,-188,59,-193,57,-195,55,-194,52,-196,45,-193,39,-189,36,-184,37,-182,39,-181,42,-174,43,-174,42,-175,39,-176,37,-177,37,-177,33,-178,32,-176,31,-170,32,-167,31,-166,29,-168,22,-164,18,-163,18,-159,19,-154,17,-151,19,-151,21,-150,22,-147,22,-144,25,-142,24,-143,23,-144,23,-143,21,-144,20,-143,18,-142,20,-143,22,-140,23,-141,24,-140,24,-139,23,-138,23,-136,21,-132,21,-130,20,-129,21,-124,21,-125,21,-125,20,-122,19,-121,17,-118,16,-117,15,-117,14,-114,12,-108,12,-106,11,-103,8,-101,4,-100,3,-100,2,-101,0,-97,0,-97,-2,-96,-1,-90,-3,-89,-4,-89,-5,-87,-5,-83,-6,-80,-6,-74,-10,-71,-10,-70,-11,-69,-15,-70,-18,-77,-26,-79,-36,-80,-39,-82,-42,-82,-44,-84,-45,-84,-46,-89,-47,-95,-50,-97,-52,-98,-57,-101,-62,-105,-64,-108,-69,-110,-70,-112,-70,-116,-69,-117,-68,-117,-69,-114,-71,-115,-72,-113,-73,-114,-74,-115,-76,-118,-77,-125,-78,-124,-81,-125,-82,-128,-82,-129,-82,-130,-82,-130,-84,-129,-85,-128,-84,-127,-85,-130,-87,-131,-90,-133,-90,-135,-91,-135,-93,-133,-94,-131,-94,-132,-96,-134,-97,-136,-100,-138,-101,-138,-104,-136,-105,-139,-105,-142,-106,-142,-108,-145,-107,-150,-105,-151,-97,-150,-95,-148,-94,-151,-93,-149,-92,-149,-88,-146,-89,-145,-85,-147,-84,-147,-87,-149,-86,-147,-80,-146,-79,-147,-74,-146,-74,-143,-65,-143,-58,-142,-55,-140,-43,-140,-40,-141,-37,-143,-36,-143,-35,-152,-29,-153,-28,-153,-27,-160,-14,-163,-12,-162,-11,-163,-9,-160,-5,-160,-4,-161,-5,-162,-4,-162,-2,-161,-2,-160,2,-158,3,-157,4,-157,5,-156,5,-154,8,-155,8,-155,13,-156,15,-157,16,-156,17,-158,18,-159,18,-161,16,-160,15,-162,14,-162,16,-163,15,-163,16,-166,16,-167,17,-167,18,-170,20,-170,19,-171,20,-171,22,-172,22,-171,22,-175,26,-175,27,-177,26,-182,28,-187,31,-189,32,-193,31,-207,37,-211,40,-211,41,-211,43,-212,46,-217,50,-219,51,-219,53,-224,58,-226,62,-228,63,-230,64,-229,60,-223,53,-221,49,-220,49,-219,47,-220,46,-221,47,-224,49,-225,52,-230,55,-229,55,-228,57,-231,59,-235,66,-237,68,-241,69,-249,81,-248,84,-249,86,-248,91,-249,96,-246,96,-245,94,-245,95,-246,98,-251,101,-255,102,-256,103,-256,105,-258,106,-259,107,-261,109,-261,110,-264,111,-264,113,-267,114,-268,116,-273,116,-280,119,-285,120,-288,120,-294,122,-296,121,-296,120,-303,118,-304,119,-303,121,-301,122,-301,123,-308,119,-307,118,-308,116,-313,115,-313,114,-316,113,-317,112,-330,109,-324,112,-321,112,-315,115,-314,118,-317,118,-318,117,-319,118,-320,117,-321,118,-324,117,-324,119,-325,120,-328,120,-331,121,-331,122,-332,123,-329,126,-326,126,-325,127,-322,128,-323,129,-322,130,-326,129,-330,129,-333,129,-336,131,-329,133,-327,133,-328,132,-323,132,-331,136,-334,137,-332,138,-329,138,-326,139,-326,140,-324,141,-316,142,-313,143,-310,142,-309,141,-304,142,-305,141,-301,141,-287,140,-273,138,-269,139,-266,139,-260,140,-258,140,-257,140,-256,141,-252,139,-249,140,-249,139,-245,140,-243,140,-235,138,-230,138,-228,137,-231,136,-227,135,-220,136,-218,135,-216,136,-218,137,-216,137,-212,138,-209,136,-206,136,-203,135,-197,136,-197,137,-195,137,-192,136,-192,135,-191,136,-189,136,-188,138,-193,140,-193,142,-190,144,-186,143,-183,140,-185,139,-181,139;-228,146,-229,145,-225,146,-222,145,-220,146,-218,145,-216,143,-215,144,-217,146,-213,146,-211,145,-209,142,-202,140,-202,139,-205,139,-204,138,-205,138,-212,138,-227,137,-228,138,-232,138,-235,140,-225,141,-236,141,-237,142,-232,143,-239,143,-236,145,-230,147,-228,146;-153,146,-159,145,-162,147,-161,148,-156,147,-153,146;-173,146,-172,145,-170,147,-165,148,-161,145,-162,144,-156,146,-148,144,-148,143,-144,143,-142,142,-136,140,-134,138,-138,137,-130,136,-127,134,-124,134,-124,132,-128,130,-133,133,-136,133,-136,131,-131,129,-129,127,-130,125,-138,127,-132,124,-142,126,-144,127,-150,129,-155,128,-157,129,-156,131,-148,131,-149,132,-145,135,-146,135,-150,137,-154,138,-152,138,-158,140,-163,139,-177,141,-179,142,-177,142,-180,142,-180,144,-179,146,-177,147,-172,148,-173,146;-201,148,-195,148,-194,147,-196,146,-193,145,-193,143,-199,143,-205,145,-205,146,-201,145,-203,147,-201,148;-186,146,-189,144,-191,144,-192,147,-189,148,-181,148,-184,146,-186,146;-241,143,-246,142,-247,143,-252,144,-248,147,-250,149,-235,148,-231,147,-238,145,-241,144,-241,143;290,151,289,150,278,149,274,151,275,152,278,152,290,151;-197,153,-195,153,-196,150,-200,150,-202,150,-202,151,-205,151,-205,153,-197,153;-216,152,-212,152,-211,151,-213,150,-227,149,-228,149,-224,150,-235,150,-231,153,-218,151,-221,153,-219,154,-217,153,-216,152;115,141,107,142,103,143,103,144,105,144,105,146,109,147,107,148,112,149,111,150,122,153,132,154,136,154,138,153,123,151,117,149,111,145,111,143,115,141;-189,154,-183,154,-181,153,-182,152,-178,151,-162,151,-160,151,-160,150,-164,149,-176,149,-185,150,-186,152,-188,153,-194,154,-193,154,-189,154;-232,155,-233,154,-234,153,-243,152,-246,152,-238,155,-232,155;-200,157,-199,156,-210,157,-208,157,-211,158,-211,159,-202,158,-200,157;210,157,199,156,203,158,204,159,211,157,210,157;37,159,43,158,38,157,37,156,35,155,34,154,32,154,28,155,29,155,22,158,21,159,26,160,27,159,30,159,31,160,34,160,37,159;51,161,55,160,52,159,46,159,40,159,35,161,41,161,44,161,46,161,51,161;200,158,190,158,187,159,185,160,182,161,192,163,200,160,200,158;-174,159,-172,159,-178,157,-182,156,-186,157,-188,158,-186,159,-190,159,-193,160,-191,162,-189,162,-185,163,-182,161,-176,161,-174,159;-137,166,-127,166,-124,165,-135,163,-131,163,-139,161,-142,160,-154,159,-151,158,-152,158,-151,157,-160,154,-156,154,-161,152,-179,153,-179,154,-176,154,-177,156,-170,155,-173,156,-176,157,-171,158,-170,159,-173,159,-174,161,-167,160,-164,161,-175,161,-179,162,-183,164,-171,165,-166,165,-165,166,-159,166,-137,166;-54,167,-42,165,-45,165,-63,164,-56,164,-50,164,-46,164,-44,163,-46,162,-32,164,-26,163,-24,163,-34,161,-40,160,-35,160,-39,158,-39,155,-37,154,-43,153,-40,152,-39,150,-41,150,-39,149,-43,148,-41,148,-42,147,-47,147,-45,145,-45,144,-49,145,-50,145,-44,143,-44,141,-47,141,-51,143,-50,142,-53,140,-45,140,-55,137,-64,136,-68,133,-73,132,-80,131,-81,130,-81,128,-82,127,-86,125,-85,124,-87,120,-90,120,-93,122,-97,122,-103,127,-105,130,-107,132,-107,134,-108,134,-106,137,-103,137,-102,140,-107,139,-109,139,-110,141,-109,142,-103,141,-108,143,-112,143,-109,145,-115,149,-117,150,-117,151,-123,152,-137,152,-143,154,-134,155,-147,156,-146,157,-131,159,-131,160,-136,160,-124,163,-125,164,-114,164,-108,164,-106,164,-101,165,-89,163,-94,164,-94,165,-87,166,-80,166,-77,167,-70,167,-54,167".split(";").map(r=>{const a=r.split(",").map(x=>x/2),o=[];for(let i=0;i<a.length;i+=2)o.push([a[i],a[i+1]]);return o});
+const D2R=Math.PI/180;
+const toV=([lo,la])=>{const l=lo*D2R,p=la*D2R;return [Math.cos(p)*Math.cos(l),Math.cos(p)*Math.sin(l),Math.sin(p)]};
+const toLL=v=>[Math.atan2(v[1],v[0])/D2R,Math.asin(Math.max(-1,Math.min(1,v[2])))/D2R];
+const angle=(a,b)=>Math.acos(Math.max(-1,Math.min(1,a[0]*b[0]+a[1]*b[1]+a[2]*b[2])));
+const slerp=(a,b,t)=>{const w=angle(a,b);if(w<1e-6)return a;const s=Math.sin(w),k1=Math.sin((1-t)*w)/s,k2=Math.sin(t*w)/s;return [a[0]*k1+b[0]*k2,a[1]*k1+b[1]*k2,a[2]*k1+b[2]*k2]};
+const ROS_LL=[-60.64,-32.95];
+const LBL={iguazu:"Iguazú",salta:"Salta",cordoba:"Córdoba",madryn:"Puerto Madryn",calafate:"El Calafate",cusco:"Cusco",rio:"Río de Janeiro"};
+const ROUTES={europa:[["Rosario",ROS_LL],["Madrid",[-3.7,40.4],"l"],["París",[2.35,48.86],"t"],["Roma",[12.5,41.9],"r"]]};
+const routeOf=d=>ROUTES[d.id]||[["Rosario",ROS_LL],[LBL[d.id]||d.n,d.ll]];
+function Globe(svg){
+  const R=150,C=160,gid="gl"+(uid++);
+  svg.setAttribute("viewBox","-6 -6 332 332");
+  svg.innerHTML=`<defs><clipPath id="${gid}c"><circle cx="${C}" cy="${C}" r="${R}"/></clipPath><radialGradient id="${gid}" cx="38%" cy="30%" r="80%"><stop offset="0" style="stop-color:var(--surface)"/><stop offset="1" style="stop-color:var(--brand-soft)"/></radialGradient><radialGradient id="${gid}s" cx="36%" cy="28%" r="75%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></radialGradient></defs><circle class="g-halo" cx="${C}" cy="${C}" r="${R+6}"/><g clip-path="url(#${gid}c)"><rect width="320" height="320" style="fill:var(--brand-soft)"/><circle class="g-sea" cx="${C}" cy="${C}" r="${R}" fill="url(#${gid})"/><path class="g-grat"/><path class="g-land"/><circle class="g-shade" cx="${C}" cy="${C}" r="${R}" fill="url(#${gid}s)"/><path class="g-route"/><path class="g-arc"/><g class="g-pins"></g><g class="g-plane" opacity="0"><path d="M16 0c0-1.6-2-2.2-4-2.2H4L-4-12h-4l5 9.8h-8L-14-6.5h-2.5l2 6.5-2 6.5H-14l3-4.3h8l-5 9.8h4l8-9.8h8c2 0 4-.6 4-2.2z" transform="scale(.75)"/></g></g><circle cx="${C}" cy="${C}" r="${R}" fill="none" style="stroke:color-mix(in srgb,var(--brand) 25%,transparent)"/>`;
+  const q=c=>svg.querySelector(c),sea=q(".g-sea"),shade=q(".g-shade"),grat=q(".g-grat"),land=q(".g-land"),rbg=q(".g-route"),arc=q(".g-arc"),pins=q(".g-pins"),plane=q(".g-plane");
+  let center=toV(ROS_LL),zoom=1,raf=0,stops=null;
+  const f1=n=>n.toFixed(1);
+  function legPts(a,b){const va=toV(a),vb=toV(b),h=(.05+.28*angle(va,vb)/Math.PI)/Math.sqrt(zoomT),o=[];for(let i=0;i<=40;i++){const t=i/40;o.push([toLL(slerp(va,vb,t)),1+h*Math.sin(Math.PI*t)])}return o}
+  let zoomT=1;
+  function draw(prog,arrived){
+    const [l0,p0]=toLL(center),Rz=R*zoom;
+    const P=(ll,s=1)=>{const l=(ll[0]-l0)*D2R,p=ll[1]*D2R,f=p0*D2R,x=Math.cos(p)*Math.sin(l),y=Math.cos(f)*Math.sin(p)-Math.sin(f)*Math.cos(p)*Math.cos(l),z=Math.sin(f)*Math.sin(p)+Math.cos(f)*Math.cos(p)*Math.cos(l);return [C+x*Rz*s,C-y*Rz*s,z,Math.hypot(x,y)*s]};
+    sea.setAttribute("r",f1(Rz));shade.setAttribute("r",f1(Rz));
+    let d="";
+    for(const r of LAND){let vis=false;const pts=r.map(ll=>{const k=P(ll);if(k[2]>0)vis=true;else{const m=Rz/Math.max(1e-6,Math.hypot(k[0]-C,k[1]-C));k[0]=C+(k[0]-C)*m;k[1]=C+(k[1]-C)*m}return k});
+      if(vis)d+="M"+pts.map(k=>f1(k[0])+" "+f1(k[1])).join("L")+"Z"}
+    land.setAttribute("d",d);
+    let g="";const step=zoom>1.8?10:30;
+    const line=pts=>{let pen=false;for(const ll of pts){const k=P(ll);if(k[2]>0){g+=(pen?"L":"M")+f1(k[0])+" "+f1(k[1]);pen=true}else pen=false}};
+    for(let lo=-180;lo<180;lo+=step){const a=[];for(let la=-80;la<=80;la+=5)a.push([lo,la]);line(a)}
+    for(let la=-60;la<=60;la+=step){const a=[];for(let lo=-180;lo<=180;lo+=5)a.push([lo,la]);line(a)}
+    grat.setAttribute("d",g);
+    let full="",done="",pl=null,pn="";
+    if(stops){
+      const legs=stops.length-1,upto=prog*legs;
+      for(let i=0;i<legs;i++){
+        const pts=legPts(stops[i][1],stops[i+1][1]),lim=Math.max(0,Math.min(1,upto-i))*40;let pA=false,pB=false;
+        const A=P(pts[0][0]),B=P(pts[40][0]),cl=Math.hypot(B[0]-A[0],B[1]-A[1])||1,nx=-(B[1]-A[1])/cl,ny=(B[0]-A[0])/cl,bend=Math.min(60,cl*.18);
+        const PB=(ll,sc,j)=>{const k=P(ll,sc),o=bend*Math.sin(Math.PI*j/40);k[0]+=nx*o;k[1]+=ny*o;return k};
+        pts.forEach(([ll,sc],j)=>{const k=PB(ll,sc,j),vis=k[2]>0||k[3]>1;
+          if(vis){full+=(pA?"L":"M")+f1(k[0])+" "+f1(k[1]);pA=true}else pA=false;
+          if(j<=lim){if(vis){done+=(pB?"L":"M")+f1(k[0])+" "+f1(k[1]);pB=true}else pB=false}});
+        if(upto>i&&upto<=i+1&&prog<1){const j=Math.min(39,Math.floor(lim)),a=PB(pts[j][0],pts[j][1],j),b=PB(pts[j+1][0],pts[j+1][1],j+1),t=lim-j;pl=[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,Math.atan2(b[1]-a[1],b[0]-a[0])/D2R,a[2]>0||a[3]>1]}
+      }
+      stops.forEach(([n,ll,pos],i)=>{const k=P(ll);if(k[2]<=0)return;if(i&&prog*legs<i-.02)return;pos=pos||(k[0]>C+30?"l":"r");
+        const tx=pos==="l"?k[0]-9:pos==="r"?k[0]+9:k[0],ty=pos==="t"?k[1]-10:k[1]+4,an=pos==="l"?"end":pos==="t"?"middle":"start";
+        pn+=`${arrived&&i===legs?`<circle class="g-pulse" cx="${f1(k[0])}" cy="${f1(k[1])}" r="8"/>`:""}<circle class="${i?"":"home"}" cx="${f1(k[0])}" cy="${f1(k[1])}" r="${i?4.5:4}"/><text x="${f1(tx)}" y="${f1(ty)}" text-anchor="${an}">${n}</text>`});
+    }
+    rbg.setAttribute("d",full);arc.setAttribute("d",done);pins.innerHTML=pn;
+    if(pl&&pl[3]){plane.setAttribute("transform",`translate(${f1(pl[0])} ${f1(pl[1])}) rotate(${f1(pl[2])})`);plane.setAttribute("opacity",1)}else plane.setAttribute("opacity",0);
+  }
+  const cent=vs=>{const s=vs.reduce((a,v)=>[a[0]+v[0],a[1]+v[1],a[2]+v[2]],[0,0,0]),n=Math.hypot(...s);return s.map(x=>x/n)};
+  const fit=(vs,to)=>Math.min(4.5,Math.max(1,.6/Math.max(.01,Math.sin(Math.max(...vs.map(v=>angle(v,to)))))));
+  function play(d,onArrive){
+    cancelAnimationFrame(raf);stops=routeOf(d);
+    const vs=stops.map(x=>toV(x[1])),legs=vs.length-1;
+    const to1=slerp(vs[0],vs[1],.5),z1=fit(vs.slice(0,2),to1);
+    const to2=legs>1?cent(vs.slice(1)):to1,z2=legs>1?fit(vs.slice(1),to2):z1;
+    const from=center,z0=zoom;zoomT=z1;
+    if(RM){center=to2;zoom=z2;zoomT=z2;draw(1,true);onArrive&&onArrive();return}
+    const t0=performance.now(),T1=1300,TL=1500,s1=T1*.8,e1=s1+TL,T2=1100,TR=900*(legs-1);let fired=false;
+    const f=now=>{const e=now-t0;let upto;
+      if(e<e1||legs===1){const a=Math.min(1,e/T1),ea=ease(a);center=slerp(from,to1,ea);zoom=(z0+(z1-z0)*ea)*(1-.3*Math.sin(Math.PI*a));upto=Math.max(0,Math.min(1,(e-s1)/TL))}
+      else{const a=Math.min(1,(e-e1)/T2),ea=ease(a);center=slerp(to1,to2,ea);zoom=z1+(z2-z1)*ea;zoomT=zoom;upto=1+Math.max(0,Math.min(legs-1,(e-e1-T2*.5)/TR*(legs-1)))}
+      const b=upto/legs;draw(b,b>=1);
+      if(b<1)raf=requestAnimationFrame(f);else if(!fired){fired=true;onArrive&&onArrive()}};
+    raf=requestAnimationFrame(f);
+  }
+  draw(0);
+  return {play,stop(){cancelAnimationFrame(raf)}};
 }
 
-/* ---------- Grilla y filtros ---------- */
-const grid=$("#dgrid"),CARDS={};
-DESTS.forEach(d=>{
-  const el=document.createElement("article");el.className="dcard";
-  el.innerHTML=`<button class="dbtn" type="button" aria-label="Ver ${esc(d.n)}"><div class="art">${art(d)}<span class="code">ROS → ${d.code}</span></div><div class="dbody"><h3>${esc(d.n)}</h3><p>${esc(d.d)}</p><p class="dmeta">${d.nights} noches · ${d.via.toLowerCase()}</p><p class="dfor">ideal para ${forList(d)}</p></div></button>`;
-  const btn=$(".dbtn",el);
-  btn.addEventListener("click",()=>openDest(d.id));
-  el.addEventListener("pointerenter",()=>mapFocus(d.id));
-  btn.addEventListener("focus",()=>mapFocus(d.id));
-  if(!RM){btn.addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;const r=btn.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;btn.style.transform=`rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-4px)`});btn.addEventListener("pointerleave",()=>{btn.style.transform=""})}
-  grid.append(el);CARDS[d.id]=el;
-});
-grid.addEventListener("pointerleave",()=>mapFocus(null));
-let fReg="all",fPer="all";
-function applyFilter(){
-  let i=0;
-  DESTS.forEach(d=>{const ok=(fReg==="all"||d.reg===fReg)&&(fPer==="all"||d.per.includes(fPer)),el=CARDS[d.id];
-    el.hidden=!ok;if(ok&&!RM){el.classList.remove("pop");void el.offsetWidth;el.style.animationDelay=(i++*50)+"ms";el.classList.add("pop")}
-    MAPEL[d.id].dot.classList.toggle("dim",!ok);MAPEL[d.id].arc.classList.toggle("dim",!ok)});
+/* ---------- Simulador de viaje ---------- */
+const PICKS=[["Argentina",["bariloche","iguazu","salta","ushuaia"]],["Sudamérica",["floripa","cusco"]],["Caribe y Europa",["puntacana","europa"]]];
+const ORDER=PICKS.flatMap(g=>g[1]);
+const globe=Globe($("#globe")),picks=$("#picks"),tripCard=$("#tripCard"),tripHint=$("#tripHint");
+picks.innerHTML=PICKS.map(([g,ids])=>`<div class="pgroup"><span class="flabel">${g}</span>${ids.map(id=>`<button class="pick" type="button" role="radio" aria-checked="false" data-id="${id}">${({iguazu:"Iguazú",salta:"Salta y Jujuy",cusco:"Cusco",europa:"Europa"})[id]||byId[id].n}</button>`).join("")}</div>`).join("");
+let tripOn=null,auto=true,autoT=0,inView=false;
+function tripCardHTML(d){return `<div class="art">${art(d)}<span class="code">ROS → ${d.code}</span></div><div class="dbody"><h3>${esc(d.n)}</h3><p>${esc(d.d)}</p><p class="dmeta">${d.nights} noches · ${d.via.toLowerCase()}</p><p class="dfor">ideal para ${forList(d)}</p><div class="trip-actions"><button class="btn accent" type="button" data-it>Ver itinerario</button><a class="btn line" target="_blank" rel="noopener" href="${waLink(`Hola Edu Viajes, quería consultar por ${d.n} (${d.nights} noches). ¿Qué fechas y tarifas tienen?`)}">Consultar</a></div></div>`}
+function renderTrip(d){tripCard.innerHTML=tripCardHTML(d);$("[data-it]",tripCard).onclick=()=>{auto=false;openDest(d.id)}}
+function pick(id,user){
+  if(user){auto=false;clearTimeout(autoT)}
+  tripOn=id;const d=byId[id];
+  $$(".pick",picks).forEach(b=>b.setAttribute("aria-checked",b.dataset.id===id));
+  tripHint.innerHTML=`Rosario → <b>${routeOf(d).slice(1).map(x=>x[0]).join(" → ")}</b> · ${d.nights} noches`;
+  tripCard.classList.remove("land");tripCard.classList.add("wait");
+  globe.play(d,()=>{if(tripOn!==id)return;renderTrip(d);tripCard.classList.remove("wait");void tripCard.offsetWidth;tripCard.classList.add("land");
+    clearTimeout(autoT);if(auto&&inView)autoT=setTimeout(()=>{if(auto&&inView)pick(ORDER[(ORDER.indexOf(id)+1)%ORDER.length])},4200)});
 }
-$$(".chip[data-reg]").forEach(b=>b.addEventListener("click",()=>{fReg=b.dataset.reg;$$(".chip[data-reg]").forEach(x=>x.setAttribute("aria-pressed",x===b));applyFilter()}));
-$$(".chip[data-per]").forEach(b=>b.addEventListener("click",()=>{fPer=b.dataset.per;$$(".chip[data-per]").forEach(x=>x.setAttribute("aria-pressed",x===b));applyFilter()}));
+picks.addEventListener("click",e=>{const b=e.target.closest(".pick");if(b)pick(b.dataset.id,true)});
+picks.addEventListener("keydown",e=>{const d=e.key==="ArrowRight"||e.key==="ArrowDown"?1:e.key==="ArrowLeft"||e.key==="ArrowUp"?-1:0;if(!d)return;e.preventDefault();const bs=$$(".pick",picks),i=bs.findIndex(b=>b.dataset.id===tripOn),n=bs[(i+d+bs.length)%bs.length];n.focus();pick(n.dataset.id,true)});
+renderTrip(byId.bariloche);
+new IntersectionObserver(es=>es.forEach(e=>{inView=e.isIntersecting;if(inView&&!tripOn)pick("bariloche");else if(inView&&auto&&tripOn){clearTimeout(autoT);autoT=setTimeout(()=>{if(auto&&inView)pick(ORDER[(ORDER.indexOf(tripOn)+1)%ORDER.length])},2500)}else clearTimeout(autoT)}),{threshold:.35}).observe($(".trip"));
 
 /* ---------- Ficha de destino ---------- */
 const dlg=$("#dlg");
 function openDest(id){
   const d=byId[id];
-  dlg.innerHTML=`<button class="x" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="dlg-in"><div class="art">${art(d)}<span class="code">ROS → ${d.code}</span></div><div class="dlg-body"><p class="eyebrow">${{arg:"Argentina",sud:"Sudamérica",car:"Caribe",eur:"Europa"}[d.reg]}</p><h3 id="dlgTitle">${esc(d.n)}</h3><p class="desc">${esc(d.d)}</p><div class="meta"><span class="k">${d.nights} noches</span><span>${d.via}</span>${d.per.map(p=>`<span>${PER[p]}</span>`).join("")}</div><ol class="itin">${d.it.map(([a,b])=>`<li><b>${a}</b>${esc(b)}</li>`).join("")}</ol><p style="font-size:.84rem;color:var(--muted);margin:0 0 16px">Itinerario de ejemplo <em class="tbc">a confirmar</em> · tarifa según fecha y cantidad de pasajeros.</p><div class="dlg-actions"><a class="btn wa" target="_blank" rel="noopener" href="${waLink(`Hola Edu Viajes, quería consultar por ${d.n} (${d.nights} noches). ¿Qué fechas y tarifas tienen?`)}">Consultar por WhatsApp</a><button class="btn line" type="button" data-q>Cotizar a medida</button></div></div></div>`;
+  const world=d.reg==="eur"||d.reg==="car";
+  dlg.innerHTML=`<button class="x" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="dlg-in"><div class="art${world?" globe-art":""}">${world?`<svg class="globe" role="img" aria-label="Ruta desde Rosario a ${esc(d.n)} sobre el globo terráqueo"></svg>`:art(d)}<span class="code">ROS → ${d.code}</span></div><div class="dlg-body"><p class="eyebrow">${{arg:"Argentina",sud:"Sudamérica",car:"Caribe",eur:"Europa"}[d.reg]}</p><h3 id="dlgTitle">${esc(d.n)}</h3><p class="desc">${esc(d.d)}</p><div class="meta"><span class="k">${d.nights} noches</span><span>${d.via}</span>${d.per.map(p=>`<span>${PER[p]}</span>`).join("")}</div><ol class="itin">${d.it.map(([a,b])=>`<li><b>${a}</b>${esc(b)}</li>`).join("")}</ol><p style="font-size:.84rem;color:var(--muted);margin:0 0 16px">Itinerario de ejemplo <em class="tbc">a confirmar</em> · tarifa según fecha y cantidad de pasajeros.</p><div class="dlg-actions"><a class="btn wa" target="_blank" rel="noopener" href="${waLink(`Hola Edu Viajes, quería consultar por ${d.n} (${d.nights} noches). ¿Qué fechas y tarifas tienen?`)}">Consultar por WhatsApp</a><button class="btn line" type="button" data-q>Cotizar a medida</button></div></div></div>`;
   $(".x",dlg).onclick=()=>dlg.close();
   $("[data-q]",dlg).onclick=()=>{dlg.close();qDest.value=d.id;qNoches.value=d.nights;updPass();$("#cotizar").scrollIntoView({behavior:RM?"auto":"smooth"})};
   dlg.showModal();
+  if(world){const g=Globe($(".globe",dlg));setTimeout(()=>g.play(d),250)}
 }
 dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
 
@@ -1134,7 +1206,7 @@ const root=document.documentElement;
 const isDark=()=>root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
 $("#themeBtn").addEventListener("click",()=>{root.dataset.theme=isDark()?"light":"dark";try{localStorage.setItem("eduviajes-theme",root.dataset.theme)}catch(e){}});
 const pals=$$(".pal button"),markPal=()=>{const cur=root.dataset.palette||"bosque";pals.forEach(b=>b.setAttribute("aria-pressed",b.dataset.pal===cur))};
-pals.forEach(b=>b.addEventListener("click",()=>{root.dataset.palette=b.dataset.pal;try{localStorage.setItem("eduviajes-verde",b.dataset.pal)}catch(e){}markPal();DESTS.forEach(d=>{$(".art",CARDS[d.id]).innerHTML=art(d)+`<span class="code">ROS → ${d.code}</span>`})}));markPal();
+pals.forEach(b=>b.addEventListener("click",()=>{root.dataset.palette=b.dataset.pal;try{localStorage.setItem("eduviajes-verde",b.dataset.pal)}catch(e){}markPal();renderTrip(byId[tripOn||"bariloche"])}));markPal();
 const menu=$("#menu"),mb=$("#menuBtn");
 mb.addEventListener("click",()=>{const o=menu.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
 $$("a",menu).forEach(a=>a.addEventListener("click",()=>{menu.classList.remove("open");mb.setAttribute("aria-expanded","false")}));
