@@ -17,7 +17,7 @@ Framework Preset **Other** y Build Command vacío. Así queda separado del sitio
 
 ## Qué incluye
 
-- Identidad verde y blanca, con notas manuscritas y cursivas subrayadas a mano que se dibujan al aparecer.
+- Identidad estrictamente verde y blanca (ilustraciones incluidas, generadas del tono elegido), con notas manuscritas y cursivas subrayadas a mano que se dibujan al aparecer.
 - Hero animado: avión que sale del Monumento a la Bandera, parallax, cartel split-flap y sello giratorio.
   En modo oscuro el cielo pasa a noche con estrellas.
 - Tablero de salidas tipo aeropuerto (fechas de ejemplo) que abre la ficha del viaje.
