@@ -1,6 +1,6 @@
 # Edu Viajes · propuesta web
 
-Propuesta de sitio para Edu Viajes (viajes y turismo, 9 de Julio 1117, Rosario · sucursal Maciel · EVT Leg. 12931).
+Propuesta de sitio para Edu Viajes (viajes y turismo, 9 de Julio 1117, Rosario · EVT Leg. 12931).
 Un único archivo `index.html` con HTML, CSS y JavaScript sin dependencias: las tipografías
 (Fraunces, Schibsted Grotesk y Caveat, licencia OFL) están incrustadas en el archivo.
 
@@ -28,13 +28,15 @@ Framework Preset **Other** y Build Command vacío. Así queda separado del sitio
 - Sección colegios: niveles en pestañas de carpeta, qué incluye en una hoja de cuaderno, recorrido paso a paso con un micro que avanza al scrollear y formulario a WhatsApp.
 - Simulador de cuotas (fija o indexada) con valor en pesos de hoy, gráfico y tabla.
 - Cotizador que arma una tarjeta de embarque en vivo y envía la consulta por WhatsApp o email (sin pagos online).
-- Reseñas como postales con estampilla y matasellos.
+- Reseñas de Google como postales con estampilla, más barra con puntaje, cantidad y link a la ficha de Google Maps.
+  Se cargan desde `GOOGLE` y `REVIEWS` en el script; con `rating: null` no se muestran números.
 - Horario en vivo, modo oscuro y selector de 3 tonos de verde claro (hoja, manzana, menta) para elegir el de la marca (sólo para la propuesta).
 - Respeta `prefers-reduced-motion`.
 
 ## Antes del lanzamiento
 
-- Confirmar el WhatsApp (constante `WA`) y los horarios (`HRS`); se tomaron de directorios públicos o son supuestos.
-- Dirección de Maciel, razón social y habilitación de turismo estudiantil (Ley 25.599).
+- Confirmar el WhatsApp (constante `WA`), el email (ventas@ o consultas@) y los horarios (`HRS`); se tomaron de directorios públicos.
+- Razón social, habilitación de turismo estudiantil (Ley 25.599) y si tienen otra sucursal.
+- Cargar puntaje, cantidad y reseñas reales de Google Maps en `GOOGLE` y `REVIEWS`.
 - Elegir los destinos destacados (`PICKS`) y reemplazar destinos, itinerarios, salidas (`DESTS`, `DEPS`) y reseñas de ejemplo por los reales.
 - Ajustar el verde al código exacto de la marca, sumar logo y fotos reales; quitar el banner y el selector de paleta y sacar `noindex` del `<head>`.
