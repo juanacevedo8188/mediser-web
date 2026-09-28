@@ -463,12 +463,6 @@ details.tbl summary{cursor:pointer;font-weight:700;font-size:.88rem;color:var(--
 .office.accent a{color:var(--on-brand)}
 .office.accent .btn{margin-top:14px}
 
-/* propuesta */
-.proposal{border-top:1px solid var(--line)}
-.proposalgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.proposalgrid article{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
-.proposalgrid ul{margin:0;padding-left:18px;color:var(--muted)}
-.proposalgrid li{margin-bottom:6px}
 
 footer{background:var(--deep);color:#fff;padding:40px 0;font-size:.9rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
@@ -498,7 +492,7 @@ footer p{margin:0;opacity:.75}
   .nav .tools{margin-left:auto}
   .menu-btn{display:grid}
   .hero-in{padding-bottom:230px}
-  .tpanel,.edu-split,.contact,.proposalgrid,.postcards{grid-template-columns:1fr}
+  .tpanel,.edu-split,.contact,.postcards{grid-template-columns:1fr}
   .postcard:nth-child(2){margin-top:0}
   .notebook ul{columns:1}
   .sticky{position:static}
@@ -844,16 +838,6 @@ footer p{margin:0;opacity:.75}
   </div>
 </section>
 
-<section class="wrap section proposal" id="propuesta">
-  <p class="eyebrow">para charlar con Edu Viajes</p>
-  <h2>De esta idea a <em>su nueva web</em>.</h2>
-  <p class="intro">Una primera versión pensada para que colegios y familias encuentren rápido su viaje y terminen consultando.</p>
-  <div class="proposalgrid">
-    <article><h3>Qué incluiría</h3><ul><li>Diseño adaptado a celular, tablet y PC.</li><li>Simulador de viaje: un globo que vuela desde Rosario al destino elegido, sin listar todo el catálogo.</li><li>Sección para colegios con pedido de propuesta.</li><li>Simulador de cuotas para familias.</li><li>Cotizador que envía la consulta armada por WhatsApp, sin pagos online.</li><li>Reseñas de Google con link directo a su ficha.</li><li>Horario en vivo, modo oscuro y 3 tonos de verde para elegir el de la marca.</li></ul></article>
-    <article><h3>Qué hace falta de Edu Viajes</h3><ul><li>Logo en alta calidad y el código exacto de su verde.</li><li>Fotos reales de viajes y grupos (con autorización).</li><li>Destinos, itinerarios y salidas vigentes.</li><li>Confirmar WhatsApp, email, horarios y razón social.</li><li>Puntaje, cantidad y 3 a 6 reseñas de su ficha de Google Maps.</li><li>Confirmar habilitación de turismo estudiantil y cómo arman los planes de pago.</li></ul></article>
-    <article><h3>Próximos pasos</h3><ul><li>Revisar esta propuesta juntos.</li><li>Ajustar textos y contenido real.</li><li>Recuperar el dominio eduviajes.tur.ar y publicarlo ahí.</li><li>Dar de alta la ficha en Google Maps / Business.</li></ul></article>
-  </div>
-</section>
 </main>
 
 <footer>
@@ -1220,7 +1204,7 @@ new IntersectionObserver((es,o)=>{es.forEach(e=>{if(!e.isIntersecting)return;o.d
 const plane16=`<svg viewBox="0 0 32 32" fill="currentColor"><path d="M28 16c0-1-1.1-1.5-2.3-1.5h-5L13.5 5H11l3.6 9.5H9L6.6 11.4H4.5L6 16l-1.5 4.6h2.1L9 17.5h5.6L11 27h2.5l7.2-9.5h5c1.2 0 2.3-.5 2.3-1.5z"/></svg>`;
 const mq=DESTS.map(d=>`<span>${d.n}${plane16}</span>`).join("");$("#track").innerHTML=mq+mq;
 const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");ro.unobserve(e.target)}}),{threshold:.12});
-$$("#destinos > h2, #destinos > .intro, .edu .intro, #cuotas > h2, .trust h2, .postcard, .office, .proposalgrid article").forEach(el=>{el.classList.add("reveal");ro.observe(el)});
+$$("#destinos > h2, #destinos > .intro, .edu .intro, #cuotas > h2, .trust h2, .postcard, .office").forEach(el=>{el.classList.add("reveal");ro.observe(el)});
 $$(".reveal").forEach(el=>ro.observe(el));
 if(RM)$$(".reveal").forEach(el=>el.classList.add("in"));
 
