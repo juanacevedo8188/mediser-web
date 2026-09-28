@@ -808,7 +808,7 @@ footer p{margin:0;opacity:.75}
   <div class="wrap">
     <p class="eyebrow">lo que dicen de nosotros</p>
     <h2 id="trustTitle">Más de dos décadas <em>llevando rosarinos</em>.</h2>
-    <p class="facts" id="counters">Más de <b data-count="20">0</b> años saliendo desde 9 de Julio 1117. Esto cuentan sus pasajeros en Google. <em class="tbc">años a confirmar</em></p>
+    <p class="facts" id="counters">Más de <b data-count="20">0</b> años saliendo desde 9 de Julio 1117 y <b data-count="257">0</b> reseñas en Google que lo cuentan. <em class="tbc">años a confirmar</em></p>
     <div class="gbar" id="gbar"></div>
     <div class="postcards" id="postcards"></div>
   </div>
@@ -822,7 +822,7 @@ footer p{margin:0;opacity:.75}
   <div class="contact">
     <div class="office">
       <h3>Rosario</h3>
-      <p>9 de Julio 1117</p>
+      <p>9 de Julio 1117 · S2000BNW</p>
       <p><a href="https://www.google.com/maps/search/?api=1&amp;query=9+de+Julio+1117+Rosario+Santa+Fe" target="_blank" rel="noopener">Cómo llegar ↗</a></p>
       <ul class="hours" id="hours"></ul>
       <p style="margin-top:10px;font-size:.8rem"><em class="tbc">Horarios a confirmar</em></p>
@@ -835,7 +835,7 @@ footer p{margin:0;opacity:.75}
     </div>
     <div class="office accent">
       <h3>Escribinos</h3>
-      <p>Tel. <a href="tel:+543414213117">0341 421-3117</a></p>
+      <p>Tel. <a href="tel:+543417945159">0341 794-5159</a></p>
       <p>WhatsApp <a href="#" class="wa-link">341 794-5159</a></p>
       <p><a href="mailto:ventas@eduviajes.tur.ar">ventas@eduviajes.tur.ar</a></p>
       <p style="display:flex;gap:14px;margin-top:10px"><a href="https://www.instagram.com/eduviajesturismo/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/EduViajesRosario/" target="_blank" rel="noopener">Facebook ↗</a></p>
@@ -1198,7 +1198,7 @@ updPass();
 /* ---------- Reseñas de Google ----------
    Completar con los datos de su ficha: puntaje (ej. 4.8), cantidad total y reseñas textuales.
    Mientras rating sea null, la web no muestra números inventados. */
-const GOOGLE={rating:null,count:null,url:"https://www.google.com/maps/search/?api=1&query=Eduviajes+9+de+Julio+1117+Rosario"};
+const GOOGLE={rating:4.4,count:257,url:"https://www.google.com/maps/search/?api=1&query=Eduviajes+9+de+Julio+1117+Rosario"}; /* ficha de Google Maps, septiembre de 2026 */
 const REVIEWS=[
  {t:"Organizaron el viaje de egresados de mi hija y estuvieron en cada detalle. Volvieron felices.",a:"mamá de 5.º año",y:"2025",s:5,ej:true},
  {t:"Fuimos a Iguazú con 4.º grado: coordinación impecable y actividades pensadas para el aula.",a:"seño de primaria",y:"2024",s:5,ej:true},
@@ -1225,7 +1225,8 @@ $$(".reveal").forEach(el=>ro.observe(el));
 if(RM)$$(".reveal").forEach(el=>el.classList.add("in"));
 
 /* ---------- Horario en vivo (a confirmar) ---------- */
-const HRS={1:[[510,1110]],2:[[510,1110]],3:[[510,1110]],4:[[510,1110]],5:[[510,1110]],6:[[570,750]]};
+/* cierre 18:00 según Google Maps; apertura y sábado según directorios (a confirmar) */
+const HRS={1:[[510,1080]],2:[[510,1080]],3:[[510,1080]],4:[[510,1080]],5:[[510,1080]],6:[[570,750]]};
 const DN=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"],hm=m=>`${String(m/60|0).padStart(2,"0")}:${String(m%60).padStart(2,"0")}`;
 function nowAR(){const p=Object.fromEntries(new Intl.DateTimeFormat("en-US",{timeZone:"America/Argentina/Buenos_Aires",weekday:"short",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(new Date()).map(x=>[x.type,x.value]));return {d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(p.weekday),m:(+p.hour%24)*60+ +p.minute}}
 function status(){
