@@ -29,7 +29,7 @@ Framework Preset **Other** y Build Command vacío. Así queda separado del sitio
 - Simulador de cuotas (fija o indexada) con valor en pesos de hoy, gráfico y tabla.
 - Cotizador que arma una tarjeta de embarque en vivo y envía la consulta por WhatsApp o email (sin pagos online).
 - Reseñas como postales con estampilla y matasellos.
-- Horario en vivo, modo oscuro y selector de 3 tonos de verde para elegir el de la marca (sólo para la propuesta).
+- Horario en vivo, modo oscuro y selector de 3 tonos de verde claro (hoja, manzana, menta) para elegir el de la marca (sólo para la propuesta).
 - Respeta `prefers-reduced-motion`.
 
 ## Antes del lanzamiento
