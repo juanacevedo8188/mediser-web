@@ -33,6 +33,13 @@ Framework Preset **Other** y Build Command vacío. Así queda separado del sitio
 - Horario en vivo, modo oscuro y selector de 3 tonos de verde claro (hoja, manzana, menta) para elegir el de la marca (sólo para la propuesta).
 - Respeta `prefers-reduced-motion`.
 
+## Propuesta para la agencia
+
+`propuesta.html` es la propuesta interactiva para Edu Viajes (`/propuesta`), con `noindex` y sin enlaces
+desde la web. Incluye galería de pantallas que abren cada sección de la web (con botón "← Volver a la
+propuesta"), calculadoras con fórmulas, hoja de decisiones que se envía por WhatsApp a Juan Cruz y
+descarga en PDF con el diseño de impresión en A4. Las capturas están en `propuesta-img/`.
+
 ## Antes del lanzamiento
 
 - Confirmar el WhatsApp (constante `WA`), el email (ventas@ o consultas@) y los horarios (`HRS`); se tomaron de directorios públicos.

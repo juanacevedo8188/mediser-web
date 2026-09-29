@@ -466,6 +466,9 @@ footer{background:var(--deep);color:#fff;padding:40px 0;font-size:.9rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
 footer p{margin:0;opacity:.75}
 
+.backprop{position:fixed;left:16px;bottom:18px;z-index:55;display:none;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;background:var(--deep);color:#fff;font-weight:700;font-size:.9rem;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
+.backprop.show{display:inline-flex}
+.backprop:hover{background:var(--brand)}
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:50;width:60px;height:60px;border-radius:50%;background:#1fa855;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(31,168,85,.6);transition:transform .2s}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:30px;height:30px}
@@ -626,7 +629,7 @@ footer p{margin:0;opacity:.75}
   </svg>
 </section>
 
-<section class="dep" aria-labelledby="depTitle">
+<section class="dep" id="salidas" aria-labelledby="depTitle">
   <div class="wrap">
     <div class="top">
       <div><p class="eyebrow">lo que sale pronto</p><h2 id="depTitle">Próximas salidas <em>grupales</em></h2></div>
@@ -796,7 +799,7 @@ footer p{margin:0;opacity:.75}
   </div>
 </section>
 
-<section class="section trust" aria-labelledby="trustTitle">
+<section class="section trust" id="resenas" aria-labelledby="trustTitle">
   <div class="wrap">
     <p class="eyebrow">lo que dicen de nosotros</p>
     <h2 id="trustTitle">Más de dos décadas <em>llevando rosarinos</em>.</h2>
@@ -846,6 +849,8 @@ footer p{margin:0;opacity:.75}
 </footer>
 
 <dialog id="dlg" aria-labelledby="dlgTitle"></dialog>
+
+<a class="backprop" id="backProp" href="propuesta.html">← Volver a la propuesta</a>
 
 <a class="wa-float wa-link" href="#" aria-label="Escribir por WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
 
@@ -1220,6 +1225,10 @@ function status(){
   $("#hours").innerHTML=[1,2,3,4,5,6,0].map(k=>`<li class="${k===d?"today":""}"><span>${DN[k]}</span><span>${HRS[k]?HRS[k].map(([a,b])=>`${hm(a)}–${hm(b)}`).join(" y "):"Cerrado"}</span></li>`).join("");
 }
 status();setInterval(status,60000);
+
+/* ---------- Viene desde la propuesta: botón para volver (los visitantes no lo ven) ---------- */
+try{if(new URLSearchParams(location.search).get("from")==="propuesta")sessionStorage.setItem("fromProp","1")}catch(e){}
+try{if(sessionStorage.getItem("fromProp"))$("#backProp").classList.add("show")}catch(e){}
 
 /* ---------- Tema, paleta y menú ---------- */
 const root=document.documentElement;
