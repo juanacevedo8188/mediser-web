@@ -29,6 +29,10 @@ Cada `git push` a `main` vuelve a publicar el sitio.
 - Sección para clínicas con formulario de cotización.
 - Horario en vivo, modo oscuro y selector de 3 paletas (sólo para la propuesta).
 
+## Propuesta en PDF
+
+`propuesta/Propuesta-Mediser.pdf`: documento de 6 páginas para enviar a Mediser con la propuesta y el material que necesitamos de su parte.
+
 ## Antes del lanzamiento
 
 - Confirmar el WhatsApp (constante `WA` en el script); se tomó de directorios públicos.
